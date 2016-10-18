@@ -1,0 +1,17 @@
+<h2>{{ vm.title }}</h2>
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th>Hotel</th>
+        <th>Description</th>
+        <th>Address</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="hotel in vm.hotels">
+        <td>{{ hotel.name }}</td>
+        <td>{{ hotel.description }}</td>
+        <td>{{ hotel.location.address }}</td>
+    </tr>
+    </tbody>
+</table>
