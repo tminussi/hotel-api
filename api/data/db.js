@@ -23,4 +23,5 @@ process.on('SIGNINT', function () {
 });
 
 require('./hotels.model');
+require('./users.model');
 

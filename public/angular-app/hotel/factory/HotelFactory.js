@@ -12,9 +12,8 @@ function HotelFactory($http, $routeParams) {
             .catch(fail);
     }
 
-    function fetchOneHotel() {
-        let hotelId = $routeParams.id;
-        return $http.get('api/hotels/' + hotelId)
+    function fetchOneHotel(id) {
+        return $http.get('api/hotels/' + id)
             .then(success)
             .catch(fail);
     }
